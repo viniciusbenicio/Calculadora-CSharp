@@ -14,8 +14,9 @@ namespace Calculadora
             float n2 = float.Parse(Console.ReadLine());
 
 
-            Console.WriteLine("Resultado da Soma: ");
-            Console.WriteLine(n1 + n2);
+            float resultado = n1 + n2;
+
+            Console.WriteLine($"Resultado da Soma: {resultado} ");
 
 
 
