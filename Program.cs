@@ -8,6 +8,7 @@ namespace Calculadora
         {
 
             Somar();
+            Substracao();   
 
         }
 
@@ -26,6 +27,20 @@ namespace Calculadora
 
             // Mostrando no Console uma string com o resultado.
             Console.WriteLine($"Resultado da Soma: {resultado} ");
+        }
+
+        static void Substracao()
+        {
+            Console.WriteLine("Primeiro valor: ");
+            float n1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Primeiro valor: ");
+            float n2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("-----------------");
+
+            float resultado = n1 - n2;
+            Console.WriteLine($"O Resultado dos valores: {resultado}");
         }
     }
 }
