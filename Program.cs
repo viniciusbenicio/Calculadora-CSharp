@@ -22,9 +22,15 @@ namespace Calculadora
             Console.WriteLine("-------------------------------");
 
             Console.WriteLine("Digite a opção que deseja.....");
-            short valor = short.Parse(Console.ReadLine());  
+            short valor = short.Parse(Console.ReadLine());
 
+            switch (valor) {
+                case 1: Somar(); break;
+                case 2: Substracao(); break;
+                case 3: Divisao(); break;
+                case 4: Multiplicacao(); break;
 
+            }
         }
 
         static void Somar()
