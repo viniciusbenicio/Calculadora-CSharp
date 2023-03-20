@@ -29,6 +29,7 @@ namespace Calculadora
                 case 2: Substracao(); break;
                 case 3: Divisao(); break;
                 case 4: Multiplicacao(); break;
+                default: Console.WriteLine("Valor incorreto"); break;
 
             }
         }
