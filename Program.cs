@@ -7,10 +7,23 @@ namespace Calculadora
         static void Main(string[] args)
         {
 
-            Somar();
-            Substracao();
-            Divisao();
-            Multiplicacao();
+            Menu();
+
+        }
+
+        static void Menu()
+        {
+            Console.WriteLine("Escolha as opções da Calculadora: ");
+            Console.WriteLine("1 - Somar");
+            Console.WriteLine("2 - Substraçao");
+            Console.WriteLine("3 - Divisão");
+            Console.WriteLine("4 - Multiplicação");
+
+            Console.WriteLine("-------------------------------");
+
+            Console.WriteLine("Digite a opção que deseja.....");
+            short valor = short.Parse(Console.ReadLine());  
+
 
         }
 
