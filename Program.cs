@@ -8,7 +8,9 @@ namespace Calculadora
         {
 
             Somar();
-            Substracao();   
+            Substracao();
+            Divisao();
+            Multiplicacao();
 
         }
 
@@ -40,6 +42,34 @@ namespace Calculadora
             Console.WriteLine("-----------------");
 
             float resultado = n1 - n2;
+            Console.WriteLine($"O Resultado dos valores: {resultado}");
+        }
+
+        static void Divisao()
+        {
+            Console.WriteLine("Primeiro valor: ");
+            float n1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Primeiro valor: ");
+            float n2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("-----------------");
+
+            float resultado = n1 / n2;
+            Console.WriteLine($"O Resultado dos valores: {resultado}");
+        }
+
+        static void Multiplicacao()
+        {
+            Console.WriteLine("Primeiro valor: ");
+            float n1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Primeiro valor: ");
+            float n2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("-----------------");
+
+            float resultado = n1 * n2;
             Console.WriteLine($"O Resultado dos valores: {resultado}");
         }
     }
